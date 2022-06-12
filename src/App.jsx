@@ -68,8 +68,8 @@ function Frames({
     }
   });
   useFrame((state, dt) => {
-    state.camera.position.lerp(p, 0.025);
-    state.camera.quaternion.slerp(q, 0.025);
+    state.camera.position.lerp(p, 0.06);
+    state.camera.quaternion.slerp(q, 0.06);
   });
   return (
     <group
@@ -154,6 +154,7 @@ function Frame({ url, c = new THREE.Color(), ...props }) {
         position={[0.55, GOLDENRATIO, 0]}
         // position={[-0.45, GOLDENRATIO + 0.1, 0]}
         fontSize={0.08}
+        onClick={() => alert('text info clicked')}
       >
         {/* {props.data.name + '(' + props.data.role + ')'} */}
         {props.data.role + ' ' + props.data.name}

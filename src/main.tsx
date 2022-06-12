@@ -11,7 +11,7 @@ const images = [
   {
     position: [0, 0, 1.5],
     rotation: [0, 0, 0],
-    url: '/images/backImage1.jpeg',
+    url: '/images/backImage1.png',
     data: {
       role: 'SPORTBASE',
       name: 'Metaverse',
@@ -21,7 +21,7 @@ const images = [
   {
     position: [-0.8, 0, -0.6],
     rotation: [0, 0, 0],
-    url: '/images/backImage2.jpeg',
+    url: '/images/backImage2.png',
     data: {
       role: 'Artist',
       name: 'Eonix',
@@ -30,7 +30,7 @@ const images = [
   {
     position: [0.8, 0, -0.6],
     rotation: [0, 0, 0],
-    url: '/images/backImage3.jpeg',
+    url: '/images/backImage3.png',
     data: {
       role: 'Advisor',
       name: 'Remco',
@@ -38,9 +38,9 @@ const images = [
   },
   // Left
   {
-    position: [-1.75, 0, 0.25],
+    position: [-1.9, 0, -0.1],
     rotation: [0, Math.PI / 2.5, 0],
-    url: '/images/backImage4.jpeg',
+    url: '/images/backImage4.png',
     data: {
       role: 'Designer',
       name: 'Ayaz',
@@ -49,7 +49,7 @@ const images = [
   {
     position: [-2.15, 0, 1.5],
     rotation: [0, Math.PI / 2.5, 0],
-    url: '/images/backImage5.jpeg',
+    url: '/images/backImage5.png',
     data: {
       role: 'Developer',
       name: 'James',
@@ -58,7 +58,7 @@ const images = [
   {
     position: [-2, 0, 2.75],
     rotation: [0, Math.PI / 2.5, 0],
-    url: '/images/backImage6.jpeg',
+    url: '/images/backImage6.png',
     data: {
       role: 'L.Developer',
       name: 'Azuki',
@@ -66,9 +66,9 @@ const images = [
   },
   // Right
   {
-    position: [1.75, 0, 0.25],
+    position: [1.95, 0, -0.1],
     rotation: [0, -Math.PI / 2.5, 0],
-    url: '/images/backImage7.jpeg',
+    url: '/images/backImage7.png',
     data: {
       role: 'Community',
       name: 'Rob',
@@ -77,7 +77,7 @@ const images = [
   {
     position: [2.15, 0, 1.5],
     rotation: [0, -Math.PI / 2.5, 0],
-    url: '/images/backImage8.jpeg',
+    url: '/images/backImage8.png',
     data: {
       role: 'Marketing',
       name: 'Rom',
@@ -86,7 +86,7 @@ const images = [
   {
     position: [2, 0, 2.75],
     rotation: [0, -Math.PI / 2.5, 0],
-    url: '/images/backImage9.jpeg',
+    url: '/images/backImage9.png',
     data: {
       role: 'CEO',
       name: 'Kanessa',
