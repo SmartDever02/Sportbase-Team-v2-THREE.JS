@@ -14,7 +14,8 @@ const images = [
     url: '/images/backImage1.png',
     data: {
       role: 'SPORTBASE',
-      name: 'Metaverse',
+      name: 'TEAM MEMBER',
+      contact: [{}],
     },
   },
   // Back
