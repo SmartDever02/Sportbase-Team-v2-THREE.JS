@@ -9,16 +9,29 @@ import {
 } from '@react-three/drei';
 import { useRoute, useLocation } from 'wouter';
 import getUuid from 'uuid-by-string';
-import { useDispatch } from 'react-redux';
+
+import profileData from './data';
 
 const GOLDENRATIO = 1.61803398875;
 
 function App({ images }) {
+  const [social, setSocial] = useState();
+  const [location] = useLocation();
+
   useEffect(() => {
-    let location = window.location;
-    let path = window.location.pathname;
-    console.log(location);
+    console.log(profileData);
+    let _location = location.replace('/team/', '');
+    const profile = profileData.filter((profile) => {
+      console.log(profile.hash + ' ' + _location);
+      return profile.hash === _location;
+    })[0];
+    setSocial(profile);
+    // const profile = profileData.filter(
+    //   (one) => one.hash === location.replace('/', '')
+    // );
+    // console.log(profile);
   });
+
   return (
     <div className='h-screen'>
       <Canvas
@@ -49,7 +62,15 @@ function App({ images }) {
         </group>
       </Canvas>
       <div className='fixed left-[50px] top-[50px] w-[200px] h-[300px] p-1 rounded-md border-2 border-[#ffffff90]'>
-        <div className='w-full h-full bg-[#ffffff90] rounded-sm'></div>
+        <div className='w-full h-full bg-[#ffffff90] rounded-sm p-4'>
+          {social ? (
+            <a href={social.links[0].value} target='_blank'>
+              {social.name}
+            </a>
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -63,7 +84,7 @@ const Frames = ({
   const ref = useRef();
   const clicked = useRef();
   const [, params] = useRoute('/team/:id');
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
   useEffect(() => {
     clicked.current = ref.current.getObjectByName(params?.id);
     if (clicked.current) {

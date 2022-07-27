@@ -2,10 +2,18 @@ const hash = [
   {
     name: 'Jugoslav',
     hash: 'c94e4538-7f8f-596c-97ca-e919006a7ad7',
+    links: [
+      { type: 'linkedin', value: 'https://jugoslavlink' },
+      { type: 'twitter', value: 'https://jugoslavtwitt' },
+    ],
   },
   {
     name: 'James',
     hash: '7e22d3fc-2149-5992-ad73-9f99d6d19f55',
+    links: [
+      { type: 'linkedin', value: 'https://jameslink' },
+      { type: 'twitter', value: 'https://jamestwitt' },
+    ],
   },
   {
     name: 'Ayaz',
@@ -32,3 +40,5 @@ const hash = [
     hash: 'a8f43bbc-2e5b-55f1-ae73-0c5711f7af9b',
   },
 ];
+
+export default hash;
